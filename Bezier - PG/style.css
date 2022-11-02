@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+    --bg-color: rgb(127, 126, 126);
+    --container-color: #1357e0;
+    --text-color: #ffffff;
+    --btn-color: #242323;
+    --disabled-color: #444444;
+    --selected-color: #1357e0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container-app{
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+}
+
+
+body {
+    background: var(--bg-color);
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+    font-family: Manrope, sans-serif;
+}
+
+.nav {
+    width: 100%;
+    min-height: 60px;
+    max-height: 60px;
+    height: 30%;
+    display: flex;
+    background-color: var(--selected-color);
+    z-index: 99;
+}
+
+.nav h3 {
+    color: #fff;
+    margin: auto 20px auto 40px;
+}
+
+
+
+main {
+    width: 100%;
+    height: calc(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    justify-content: left;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#canvas-container {
+    height: 100%;
+    width: 100%;
+}
+
+#canvas {
+    cursor: not-allowed;
+}
+
+p {
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    color: inherit;
+}
+
+.button-description,
+.description {
+    padding-top: 5px;
+}
+
+button,
+input {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+}
+
+button:hover {
+    background-color: var(--selected-color);
+}
+
+#first-button button,
+#done-adding-points button {
+    background-color: var(--selected-color);
+}
+
+#first-button button:disabled {
+    background-color: var(--disabled-color);
+    cursor: not-allowed;
+}
+
+.button-onclick {
+    position: relative;
+}
+
+input {
+    text-align: center;
+}
+
+input:focus {
+    background-color: var(--selected-color);
+}
+
+.external-box {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+.buttons-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    overflow-x: hidden;
+    height: 100%;
+    align-items: center;
+    order: 3;
+    padding: 10px;
+    
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.box {
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    width: 92%;
+    order: 2;
+}
+
+h1 {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.button-container,
+.input-box {
+    min-width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
